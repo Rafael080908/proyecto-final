@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AEROLINEA - Tu viaje, nuestro compromiso</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eaf6ff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #005baa, #00aaff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #004b8d;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .col {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      color: #005baa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    button {
+      background: #005baa;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003f7d;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #004b8d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AEROLINEA</h1>
+    <p>Tu viaje comienza aquí. Seguridad, comodidad y excelencia en el aire.</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Destinos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Reservar</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h2>Sobre Nosotros</h2>
+        <p>AUREA AIR es una aerolínea mexicana con más de 10 años de experiencia conectando ciudades y corazones. Operamos más de 150 vuelos diarios a destinos nacionales e internacionales, con aeronaves de última generación y tripulación altamente calificada.</p>
+      </div>
+      <div class="col">
+        <h2>Ubicación de Oficinas</h2>
+        <p><strong>Dirección:</strong> Alemania 141, entre Cortés y Madero, Ciudad de México.</p>
+        <p><strong>Horario:</strong> Lunes a Sábado, 9:00 a.m. - 6:00 p.m.</p>
+        <p><strong>Teléfono:</strong> 52 229 697 6739</p>
+        <button>Agendar una visita</button>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>Destinos Populares</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Destino</th>
+            <th>Precio desde</th>
+            <th>Duración de vuelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ciudad de México</td><td>$1,200</td><td>1h 15m</td></tr>
+          <tr><td>Guadalajara</td><td>$1,450</td><td>1h 30m</td></tr>
+          <tr><td>Monterrey</td><td>$1,300</td><td>1h 40m</td></tr>
+          <tr><td>Cancún</td><td>$1,800</td><td>2h 10m</td></tr>
+          <tr><td>Los Ángeles</td><td>$3,200</td><td>4h 45m</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3>Servicios a Bordo</h3>
+        <ul>
+          <li>Entretenimiento en pantalla individual</li>
+          <li>Menús gourmet con opciones vegetarianas</li>
+          <li>Internet Wi-Fi de alta velocidad</li>
+          <li>Asientos reclinables con cargador USB</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h3>Promoción Especial</h3>
+        <p><strong>¡Tu primer vuelo con 25% de descuento!</strong></p>
+        <p>Válido durante este mes para todos los destinos nacionales.</p>
+        <button>Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>Testimonios</h2>
+      <p>"¡Una experiencia de lujo a un precio accesible! Recomiendo AUREA AIR al 100%." — <em>Fernanda L.</em></p>
+      <p>"Nunca había volado tan cómodo. El personal fue muy atento." — <em>Jorge M.</em></p>
+      <p>"Mi familia y yo quedamos encantados con el servicio." — <em>Lucía T.</em></p>
+    </div>
+
+    <div class="col">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 AUREA AIR AEROLINEAS | Conectando destinos con excelencia
+  </footer>
+
+</body>
+</html>
